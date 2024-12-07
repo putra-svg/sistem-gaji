@@ -1,0 +1,279 @@
+ERROR - 2024-11-24 02:49:08 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\penggajian\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 D:\penggajian\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('localhost', 'root', '', 'penggajian', NULL, '', 0)
+#1 D:\penggajian\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\penggajian\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\penggajian\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\penggajian\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\penggajian\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 D:\penggajian\app\Controllers\User.php(23): CodeIgniter\BaseModel->first()
+#7 D:\penggajian\system\CodeIgniter.php(933): App\Controllers\User->authenticate()
+#8 D:\penggajian\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 D:\penggajian\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\penggajian\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\penggajian\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\penggajian\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\penggajian\system\rewrite.php(44): require_once('D:\\penggajian\\p...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\penggajian\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\penggajian\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\penggajian\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\penggajian\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\penggajian\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\penggajian\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 D:\penggajian\app\Controllers\User.php(23): CodeIgniter\BaseModel->first()
+#6 D:\penggajian\system\CodeIgniter.php(933): App\Controllers\User->authenticate()
+#7 D:\penggajian\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 D:\penggajian\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\penggajian\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 D:\penggajian\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\penggajian\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\penggajian\system\rewrite.php(44): require_once('D:\\penggajian\\p...')
+#13 {main}
+CRITICAL - 2024-11-24 02:49:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: user/authenticate]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` IS NULL
+ LIMIT 1', [], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\User.php(23): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->authenticate()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\penggajian\\public\\index.php')
+ERROR - 2024-11-24 02:49:50 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\penggajian\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 D:\penggajian\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('localhost', 'root', '', 'penggajian', NULL, '', 0)
+#1 D:\penggajian\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\penggajian\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\penggajian\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\penggajian\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\penggajian\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 D:\penggajian\app\Controllers\User.php(23): CodeIgniter\BaseModel->first()
+#7 D:\penggajian\system\CodeIgniter.php(933): App\Controllers\User->authenticate()
+#8 D:\penggajian\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 D:\penggajian\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\penggajian\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\penggajian\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\penggajian\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\penggajian\system\rewrite.php(44): require_once('D:\\penggajian\\p...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\penggajian\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\penggajian\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\penggajian\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\penggajian\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\penggajian\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\penggajian\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 D:\penggajian\app\Controllers\User.php(23): CodeIgniter\BaseModel->first()
+#6 D:\penggajian\system\CodeIgniter.php(933): App\Controllers\User->authenticate()
+#7 D:\penggajian\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 D:\penggajian\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\penggajian\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 D:\penggajian\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\penggajian\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\penggajian\system\rewrite.php(44): require_once('D:\\penggajian\\p...')
+#13 {main}
+CRITICAL - 2024-11-24 02:49:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: POST, Route: user/authenticate]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` IS NULL
+ LIMIT 1', [], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\User.php(23): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->authenticate()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\penggajian\\public\\index.php')
+ERROR - 2024-11-24 04:31:19 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\penggajian\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 D:\penggajian\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('localhost', 'root', '', 'penggajian', NULL, '', 0)
+#1 D:\penggajian\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\penggajian\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\penggajian\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `penggaj...', Array, false)
+#4 D:\penggajian\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\penggajian\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\penggajian\app\Controllers\Penggajian.php(24): CodeIgniter\BaseModel->findAll()
+#7 D:\penggajian\system\CodeIgniter.php(933): App\Controllers\Penggajian->index()
+#8 D:\penggajian\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penggajian))
+#9 D:\penggajian\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\penggajian\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\penggajian\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\penggajian\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\penggajian\system\rewrite.php(44): require_once('D:\\penggajian\\p...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\penggajian\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\penggajian\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\penggajian\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\penggajian\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `penggaj...', Array, false)
+#3 D:\penggajian\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\penggajian\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\penggajian\app\Controllers\Penggajian.php(24): CodeIgniter\BaseModel->findAll()
+#6 D:\penggajian\system\CodeIgniter.php(933): App\Controllers\Penggajian->index()
+#7 D:\penggajian\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penggajian))
+#8 D:\penggajian\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\penggajian\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 D:\penggajian\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\penggajian\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\penggajian\system\rewrite.php(44): require_once('D:\\penggajian\\p...')
+#13 {main}
+CRITICAL - 2024-11-24 04:31:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: penggajian]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `penggajian`.*, `karyawan`.`nama_karyawan`
+FROM `penggajian`
+JOIN `karyawan` ON `penggajian`.`karyawan_id` = `karyawan`.`id`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Penggajian.php(24): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Penggajian->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Penggajian))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\penggajian\\public\\index.php')
+ERROR - 2024-11-24 04:31:29 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\penggajian\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 D:\penggajian\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('localhost', 'root', '', 'penggajian', NULL, '', 0)
+#1 D:\penggajian\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\penggajian\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\penggajian\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `bonus`....', Array, false)
+#4 D:\penggajian\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\penggajian\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\penggajian\app\Controllers\Bonus.php(23): CodeIgniter\BaseModel->findAll()
+#7 D:\penggajian\system\CodeIgniter.php(933): App\Controllers\Bonus->index()
+#8 D:\penggajian\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bonus))
+#9 D:\penggajian\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\penggajian\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\penggajian\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\penggajian\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\penggajian\system\rewrite.php(44): require_once('D:\\penggajian\\p...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\penggajian\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\penggajian\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\penggajian\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\penggajian\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `bonus`....', Array, false)
+#3 D:\penggajian\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\penggajian\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\penggajian\app\Controllers\Bonus.php(23): CodeIgniter\BaseModel->findAll()
+#6 D:\penggajian\system\CodeIgniter.php(933): App\Controllers\Bonus->index()
+#7 D:\penggajian\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bonus))
+#8 D:\penggajian\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\penggajian\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 D:\penggajian\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\penggajian\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\penggajian\system\rewrite.php(44): require_once('D:\\penggajian\\p...')
+#13 {main}
+CRITICAL - 2024-11-24 04:31:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: bonus]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `bonus`.*, `karyawan`.`nama_karyawan`
+FROM `bonus`
+JOIN `karyawan` ON `karyawan`.`id` = `bonus`.`karyawan_id`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Bonus.php(23): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Bonus->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Bonus))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\penggajian\\public\\index.php')
+CRITICAL - 2024-11-24 04:55:55 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in D:\penggajian\app\Config\Routes.php on line 17 and at least 2 expected
+[Method: GET, Route: login]
+in SYSTEMPATH\Router\RouteCollection.php on line 1051.
+ 1 APPPATH\Config\Routes.php(17): CodeIgniter\Router\RouteCollection->get('/')
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('D:\\penggajian\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\penggajian\\public\\index.php')
+CRITICAL - 2024-11-24 04:55:56 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in D:\penggajian\app\Config\Routes.php on line 17 and at least 2 expected
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Router\RouteCollection.php on line 1051.
+ 1 APPPATH\Config\Routes.php(17): CodeIgniter\Router\RouteCollection->get('/')
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('D:\\penggajian\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\penggajian\\public\\index.php')
+CRITICAL - 2024-11-24 04:55:58 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in D:\penggajian\app\Config\Routes.php on line 17 and at least 2 expected
+[Method: GET, Route: dashboard]
+in SYSTEMPATH\Router\RouteCollection.php on line 1051.
+ 1 APPPATH\Config\Routes.php(17): CodeIgniter\Router\RouteCollection->get('/')
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('D:\\penggajian\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\penggajian\\public\\index.php')
+CRITICAL - 2024-11-24 04:55:59 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in D:\penggajian\app\Config\Routes.php on line 17 and at least 2 expected
+[Method: GET, Route: /]
+in SYSTEMPATH\Router\RouteCollection.php on line 1051.
+ 1 APPPATH\Config\Routes.php(17): CodeIgniter\Router\RouteCollection->get('/')
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('D:\\penggajian\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\penggajian\\public\\index.php')
+CRITICAL - 2024-11-24 04:56:01 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in D:\penggajian\app\Config\Routes.php on line 17 and at least 2 expected
+[Method: GET, Route: /]
+in SYSTEMPATH\Router\RouteCollection.php on line 1051.
+ 1 APPPATH\Config\Routes.php(17): CodeIgniter\Router\RouteCollection->get('/')
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('D:\\penggajian\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 5 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\penggajian\\public\\index.php')
+CRITICAL - 2024-11-24 04:56:28 --> ArgumentCountError: Too few arguments to function CodeIgniter\Router\RouteCollection::get(), 1 passed in D:\penggajian\app\Config\Routes.php on line 17 and at least 2 expected
+[Method: CLI, Route: serve]
+in SYSTEMPATH\Router\RouteCollection.php on line 1051.
+ 1 APPPATH\Config\Routes.php(17): CodeIgniter\Router\RouteCollection->get('/')
+ 2 SYSTEMPATH\Router\RouteCollection.php(340): require('D:\\penggajian\\app\\Config\\Routes.php')
+ 3 SYSTEMPATH\CLI\Console.php(41): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 4 SYSTEMPATH\Boot.php(351): CodeIgniter\CLI\Console->run()
+ 5 SYSTEMPATH\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 6 ROOTPATH\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))

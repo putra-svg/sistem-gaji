@@ -1,0 +1,112 @@
+ERROR - 2024-12-04 03:02:24 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\penggajian\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 D:\penggajian\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('localhost', 'root', '', 'penggajian', NULL, '', 0)
+#1 D:\penggajian\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\penggajian\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\penggajian\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `karyawa...', Array, false)
+#4 D:\penggajian\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\penggajian\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\penggajian\app\Models\KaryawanModel.php(19): CodeIgniter\BaseModel->findAll()
+#7 D:\penggajian\app\Controllers\Karyawan.php(14): App\Models\KaryawanModel->getKaryawanWithDetail()
+#8 D:\penggajian\system\CodeIgniter.php(933): App\Controllers\Karyawan->index()
+#9 D:\penggajian\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#10 D:\penggajian\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\penggajian\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\penggajian\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\penggajian\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\penggajian\system\rewrite.php(44): require_once('D:\\penggajian\\p...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\penggajian\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\penggajian\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\penggajian\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\penggajian\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `karyawa...', Array, false)
+#3 D:\penggajian\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\penggajian\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\penggajian\app\Models\KaryawanModel.php(19): CodeIgniter\BaseModel->findAll()
+#6 D:\penggajian\app\Controllers\Karyawan.php(14): App\Models\KaryawanModel->getKaryawanWithDetail()
+#7 D:\penggajian\system\CodeIgniter.php(933): App\Controllers\Karyawan->index()
+#8 D:\penggajian\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#9 D:\penggajian\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\penggajian\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\penggajian\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\penggajian\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\penggajian\system\rewrite.php(44): require_once('D:\\penggajian\\p...')
+#14 {main}
+CRITICAL - 2024-12-04 03:02:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: karyawan]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `karyawan`.*, `departemen`.`nama_departemen`, `jabatan`.`nama_jabatan`
+FROM `karyawan`
+JOIN `departemen` ON `departemen`.`id` = `karyawan`.`departemen_id`
+JOIN `jabatan` ON `jabatan`.`id` = `karyawan`.`jabatan_id`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\KaryawanModel.php(19): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Karyawan.php(14): App\Models\KaryawanModel->getKaryawanWithDetail()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Karyawan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\penggajian\\public\\index.php')
+ERROR - 2024-12-04 03:02:42 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\penggajian\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 D:\penggajian\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('localhost', 'root', '', 'penggajian', NULL, '', 0)
+#1 D:\penggajian\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\penggajian\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\penggajian\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `karyawa...', Array, false)
+#4 D:\penggajian\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\penggajian\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\penggajian\app\Models\KaryawanModel.php(19): CodeIgniter\BaseModel->findAll()
+#7 D:\penggajian\app\Controllers\Karyawan.php(14): App\Models\KaryawanModel->getKaryawanWithDetail()
+#8 D:\penggajian\system\CodeIgniter.php(933): App\Controllers\Karyawan->index()
+#9 D:\penggajian\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#10 D:\penggajian\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\penggajian\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 D:\penggajian\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\penggajian\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\penggajian\system\rewrite.php(44): require_once('D:\\penggajian\\p...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\penggajian\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\penggajian\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\penggajian\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\penggajian\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `karyawa...', Array, false)
+#3 D:\penggajian\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\penggajian\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 D:\penggajian\app\Models\KaryawanModel.php(19): CodeIgniter\BaseModel->findAll()
+#6 D:\penggajian\app\Controllers\Karyawan.php(14): App\Models\KaryawanModel->getKaryawanWithDetail()
+#7 D:\penggajian\system\CodeIgniter.php(933): App\Controllers\Karyawan->index()
+#8 D:\penggajian\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+#9 D:\penggajian\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\penggajian\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 D:\penggajian\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\penggajian\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\penggajian\system\rewrite.php(44): require_once('D:\\penggajian\\p...')
+#14 {main}
+CRITICAL - 2024-12-04 03:02:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: karyawan]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT `karyawan`.*, `departemen`.`nama_departemen`, `jabatan`.`nama_jabatan`
+FROM `karyawan`
+JOIN `departemen` ON `departemen`.`id` = `karyawan`.`departemen_id`
+JOIN `jabatan` ON `jabatan`.`id` = `karyawan`.`jabatan_id`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\KaryawanModel.php(19): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Karyawan.php(14): App\Models\KaryawanModel->getKaryawanWithDetail()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Karyawan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Karyawan))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\penggajian\\public\\index.php')
